@@ -94,6 +94,11 @@
     };
 };
 
+&mmv {
+    acceleration-exponent = <2>;
+    time-to-max-speed-ms = <50>;
+};
+
 &trackball { cpi = <1000>; };
 
 &trackball_listener {
