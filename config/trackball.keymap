@@ -96,7 +96,7 @@
 
 &mmv {
     acceleration-exponent = <8>;
-    time-to-max-speed-ms = <5>;
+    time-to-max-speed-ms = <1>;
 };
 
 &trackball { cpi = <200>; };
