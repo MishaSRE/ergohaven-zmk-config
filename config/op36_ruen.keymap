@@ -102,12 +102,12 @@
         };
 
         sys_reset_right {
-            bindings = <&bootloader>;
+            bindings = <&sys_reset>;
             key-positions = <9 8 19 35>;
         };
 
         sys_reset_left {
-            bindings = <&bootloader>;
+            bindings = <&sys_reset>;
             key-positions = <1 0 10 30>;
         };
     };
