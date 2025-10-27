@@ -100,16 +100,6 @@
             bindings = <&kp CAPSLOCK>;
             key-positions = <19 29 28>;
         };
-
-        sys_reset_right {
-            bindings = <&sys_reset>;
-            key-positions = <9 8 19 35>;
-        };
-
-        sys_reset_left {
-            bindings = <&sys_reset>;
-            key-positions = <1 0 10 30>;
-        };
     };
 
     macros {
@@ -217,10 +207,10 @@
 
         nav {
             bindings = <
-  &kp N1                &kp N2                &kp N3     &kp N4     &kp N5                              &kp N6            &kp N7           &kp N8           &kp N9        &kp N0
-  &kp LGUI              &kp LALT              &kp LSHFT  &kp LCTRL  &mkp LCLK                           &msc MOVE_Y(20)   &hmr RCTRL LEFT  &hmr RSHFT DOWN  &hmr LALT UP  &hmr RGUI RIGHT
-  &kp LA(LC(NUMBER_8))  &kp LA(LC(NUMBER_9))  &none      &mkp MB3   &mkp RCLK                           &msc MOVE_Y(-20)  &kp TAB          &none            &none         &none
-                                                         &trans     &none      &trans    &kp LS(ENTER)  &mo 2             &trans
+  &kp N1                &kp N2                &kp N3      &kp N4     &kp N5                              &kp N6            &kp N7           &kp N8           &kp N9        &kp N0
+  &kp LGUI              &kp LALT              &kp LSHFT   &kp LCTRL  &mkp LCLK                           &msc MOVE_Y(20)   &hmr RCTRL LEFT  &hmr RSHFT DOWN  &hmr LALT UP  &hmr RGUI RIGHT
+  &kp LA(LC(NUMBER_8))  &kp LA(LC(NUMBER_9))  &sys_reset  &mkp MB3   &mkp RCLK                           &msc MOVE_Y(-20)  &kp TAB          &none            &sys_reset    &none
+                                                          &trans     &none      &trans    &kp LS(ENTER)  &mo 2             &trans
             >;
 
             display-name = "Adjust";
