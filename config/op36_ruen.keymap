@@ -107,6 +107,12 @@
             key-positions = <0 10 20>;
             timeout-ms = <100>;
         };
+
+        right_reset {
+            bindings = <&sys_reset>;
+            key-positions = <9 19 29>;
+            timeout-ms = <100>;
+        };
     };
 
     macros {

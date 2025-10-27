@@ -65,7 +65,13 @@
 
         left_reset {
             bindings = <&sys_reset>;
-            key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24>;
+            key-positions = <0 10 20>;
+            timeout-ms = <100>;
+        };
+
+        right_reset {
+            bindings = <&sys_reset>;
+            key-positions = <9 19 29>;
             timeout-ms = <100>;
         };
     };
