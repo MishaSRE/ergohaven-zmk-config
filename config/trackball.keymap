@@ -95,11 +95,11 @@
 };
 
 &mmv {
-    acceleration-exponent = <8>;
+    acceleration-exponent = <1>;
     time-to-max-speed-ms = <1>;
 };
 
-&trackball { cpi = <200>; };
+&trackball { cpi = <800>; };
 
 &trackball_listener {
     input-processors = 
