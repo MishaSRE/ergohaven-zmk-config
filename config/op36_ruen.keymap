@@ -166,6 +166,20 @@
             wait-ms = <0>;
             tap-ms = <30>;
         };
+
+        ctrl_tab: ctrl_tab {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(TAB)>;
+            label = "CTRL_TAB";
+        };
+
+        ctrl_shift_tab: ctrl_shift_tab {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RC(TAB)>;
+            label = "CTRL_SHIFT_TAB";
+        };
     };
 
     keymap {
@@ -217,10 +231,10 @@
 
         nav {
             bindings = <
-  &kp N1                &kp N2                &kp N3     &kp N4     &kp N5                              &kp N6            &kp N7           &kp N8           &kp N9        &kp N0
-  &kp LGUI              &kp LALT              &kp LSHFT  &kp LCTRL  &mkp LCLK                           &msc MOVE_Y(20)   &hmr RCTRL LEFT  &hmr RSHFT DOWN  &hmr LALT UP  &hmr RGUI RIGHT
-  &kp LA(LC(NUMBER_8))  &kp LA(LC(NUMBER_9))  &none      &mkp MB3   &mkp RCLK                           &msc MOVE_Y(-20)  &none            &kp CARET        &none         &none
-                                                         &trans     &none      &trans    &kp LS(ENTER)  &mo 2             &trans
+  &kp N1                &kp N2                &kp N3           &kp N4     &kp N5                              &kp N6            &kp N7           &kp N8           &kp N9        &kp N0
+  &kp LGUI              &kp LALT              &kp LSHFT        &kp LCTRL  &mkp LCLK                           &msc MOVE_Y(20)   &hmr RCTRL LEFT  &hmr RSHFT DOWN  &hmr LALT UP  &hmr RGUI RIGHT
+  &kp LA(LC(NUMBER_8))  &kp LA(LC(NUMBER_9))  &ctrl_shift_tab  &ctrl_tab  &mkp RCLK                           &msc MOVE_Y(-20)  &none            &kp CARET        &none         &none
+                                                               &trans     &none      &trans    &kp LS(ENTER)  &mo 2             &trans
             >;
 
             display-name = "Adjust";
