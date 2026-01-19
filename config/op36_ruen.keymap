@@ -110,6 +110,18 @@
             bindings = <&kp TAB>;
             key-positions = <16 15>;
         };
+
+        copy {
+            bindings = <&kp LA(LC(NUMBER_9))>;
+            key-positions = <2 3>;
+            layers = <0 1 2 3 4>;
+            require-prior-idle-ms = <10>;
+        };
+
+        paste {
+            bindings = <&kp RC(RA(NUMBER_8))>;
+            key-positions = <23 22>;
+        };
     };
 
     macros {
