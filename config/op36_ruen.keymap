@@ -111,16 +111,17 @@
             key-positions = <16 15>;
         };
 
-        copy {
+        paste {
             bindings = <&kp LA(LC(NUMBER_9))>;
             key-positions = <2 3>;
             layers = <0 1 2 3 4>;
-            require-prior-idle-ms = <10>;
+            require-prior-idle-ms = <100>;
         };
 
-        paste {
+        copy {
             bindings = <&kp RC(RA(NUMBER_8))>;
             key-positions = <23 22>;
+            require-prior-idle-ms = <100>;
         };
     };
 
