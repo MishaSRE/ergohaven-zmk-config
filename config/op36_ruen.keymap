@@ -85,13 +85,13 @@
 
         cmben {
             bindings = <&layer_en>;
-            key-positions = <6 5 15>;
+            key-positions = <28 27 26>;
             layers = <1>;
         };
 
         cmbru {
             bindings = <&layer_ru>;
-            key-positions = <6 5 15>;
+            key-positions = <26 27 28>;
             layers = <0>;
         };
 
@@ -99,11 +99,6 @@
             bindings = <&kp RU_CYRILLIC_IO>;
             key-positions = <3 4>;
             layers = <1>;
-        };
-
-        capslock {
-            bindings = <&kp CAPSLOCK>;
-            key-positions = <19 29 28>;
         };
 
         tab {
