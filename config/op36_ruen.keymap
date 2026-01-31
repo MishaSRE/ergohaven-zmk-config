@@ -85,14 +85,16 @@
 
         cmben {
             bindings = <&layer_en>;
-            key-positions = <28 27 26>;
+            key-positions = <27 26>;
             layers = <1>;
+            require-prior-idle-ms = <20>;
         };
 
         cmbru {
             bindings = <&layer_ru>;
-            key-positions = <26 27 28>;
+            key-positions = <26 27>;
             layers = <0>;
+            require-prior-idle-ms = <20>;
         };
 
         ru_io {
@@ -104,18 +106,22 @@
         tab {
             bindings = <&kp TAB>;
             key-positions = <16 15>;
+            layers = <1 0 2 3 4>;
+            require-prior-idle-ms = <20>;
         };
 
         paste {
             bindings = <&kp LA(LC(NUMBER_9))>;
             key-positions = <22 23>;
             layers = <0 1 2 3 4>;
+            require-prior-idle-ms = <20>;
         };
 
         copy {
             bindings = <&kp RC(RA(NUMBER_8))>;
             key-positions = <22 21>;
-            require-prior-idle-ms = <0>;
+            require-prior-idle-ms = <20>;
+            layers = <1 2 0 3 4>;
         };
 
         ca {
