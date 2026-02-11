@@ -128,6 +128,13 @@
             bindings = <&kp CAPSLOCK>;
             key-positions = <29 19 28>;
         };
+
+        game_toggle {
+            bindings = <&tog 5>;
+            key-positions = <30 31 32>;
+            layers = <0 5>;
+            timeout-ms = <100>;
+        };
     };
 
     macros {
@@ -256,6 +263,17 @@
             >;
 
             display-name = "Adjust";
+        };
+
+        game {
+            bindings = <
+  &kp F  &kp D  &kp L  &kp B      &kp V                              &kp J      &kp G    &kp O    &kp U     &kp COMMA
+  &kp S  &kp T  &kp R  &kp N      &kp K                              &kp Y      &kp M    &kp A    &kp E     &kp I
+  &kp Z  &kp Q  &kp X  &kp H      &kp P                              &kp W      &kp C    &kp SQT  &kp SEMI  &kp DOT
+                       &kp LSHFT  &kp LCTRL  &kp SPACE    &kp ENTER  &kp TAB    &kp ESC
+            >;
+
+            display-name = "Game";
         };
     };
 };
