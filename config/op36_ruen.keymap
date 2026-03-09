@@ -128,6 +128,12 @@
             bindings = <&kp CAPSLOCK>;
             key-positions = <29 19 28>;
         };
+
+        vim_a {
+            bindings = <&kp A>;
+            key-positions = <34 33 35>;
+            layers = <1>;
+        };
     };
 
     macros {
